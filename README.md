@@ -1,48 +1,126 @@
 # Git Bash Commands
 
-This repository is created to help users **learn Git Bash commands in a clear and simple way**.  
-It is designed both for beginners who are new to Git Bash and for developers who want a quick reference.
+This repository provides a clean, structured, and bilingual (English / Turkish) guide to Git and Git Bash commands.
 
-The focus of this repository is not just listing commands, but explaining **what they do**, **how they work**, and **when to use them**.
-
----
-
-## Repository Content
-
-- **git-bash-command.md**  
-  The main document of this repository.  
-  It contains Git Bash commands with explanations, covering basic file operations, directory navigation, and common Git Bash usage.
+Bu repo, Git ve Git Bash komutlarını **İngilizce ve Türkçe** olarak, düzenli ve öğretici bir yapıda sunar.
 
 ---
 
-## Who Is This For?
+## 📂 Repository Structure | Repo Yapısı
 
-- Beginners learning Git and Git Bash  
-- Software engineering students  
-- Developers who want to understand commands instead of memorizing them  
-- Anyone looking for a simple Git Bash reference
+### - fundamentals.md
+
+🇬🇧
+Git basics and core concepts
+
+🇹🇷
+Git temelleri ve ana kavramlar
+
+### - repository.md
+🇬🇧
+Creating and cloning repositories
+
+🇹🇷 
+Repository oluşturma ve klonlama
+
+### - staging-commit.md
+🇬🇧
+Staging area and commit workflow
+
+🇹🇷 
+Staging alanı ve commit akışı
+
+### - branching.md
+🇬🇧
+Branching and merging strategies
+
+🇹🇷 
+Branch (dal) oluşturma ve birleştirme
+
+### - remote.md
+🇬🇧
+Working with remote repositories
+
+🇹🇷 
+Uzak repository kullanımı
+
+### - undo.md
+🇬🇧
+Undoing changes and fixing mistakes
+  
+🇹🇷
+Değişiklikleri geri alma ve hataları düzeltme
+
+### - cheatsheet.md
+
+🇬🇧
+Quick reference commands
+
+🇹🇷 
+Hızlı komut özeti
 
 ---
 
-## How to Use
+## 🌱 Branch Strategy | Branch Yapısı
 
-1. Clone this repository or browse it directly on GitHub.
-2. Open the `git-bash-command.md` file.
-3. Read through the commands or use it as a reference when needed.
+🇬🇧
+
+* main: Stable and clean documentation
+* git-bash-command: Development and content updates
+
+🇹🇷
+
+* main: Kararlı ve temiz dokümantasyon
+* git-bash-command: Geliştirme ve içerik güncellemeleri
 
 ---
 
-## Purpose
+## 🔀 Merge Plan | Birleştirme Planı
 
-This repository is not a command dump.  
-Its goal is to help you understand **why** and **how** Git Bash commands are used.
+🇬🇧
+
+1. Review all markdown files in the development branch
+2. Ensure consistent bilingual format
+3. Merge into main branch after validation
+
+🇹🇷
+
+1. Geliştirme branch’indeki tüm markdown dosyalarını gözden geçir
+2. İngilizce / Türkçe format tutarlılığını kontrol et
+3. Doğrulama sonrası main branch’e merge et
 
 ---
 
-## Future Improvements
+## 🎯 Purpose | Amaç
 
-Over time, this repository may be expanded with:
-- Additional commands
-- More detailed explanations
-- Topic-based files for better organization
+🇬🇧 
 
+This repository is designed for:
+
+* Beginners learning Git
+* Developers needing a quick reference
+* Demonstrating Git knowledge professionally
+
+🇹🇷
+
+Bu repo şu amaçlarla hazırlanmıştır:
+
+* Git öğrenen başlangıç seviyesindekiler
+* Hızlı başvuru kaynağı arayan geliştiriciler
+* Git bilgisini profesyonel olarak göstermek
+
+---
+
+## 🚀 Next Steps | Sonraki Adımlar
+
+🇬🇧
+
+* Add examples folder with real terminal outputs
+* Improve visuals and diagrams
+* Keep documentation minimal and clear
+
+🇹🇷
+
+* Gerçek terminal çıktıları içeren examples klasörü eklemek
+* Görseller ve diyagramlar eklemek
+* Dokümantasyonu sade ve anlaşılır tutmak

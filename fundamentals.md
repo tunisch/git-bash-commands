@@ -81,9 +81,8 @@ Without understanding these fundamentals:
 
 Mastering these concepts makes Git predictable and safe to use.
 
-# 🇹🇷 Türkçe
-
-## Git Nedir?
+# 🇹🇷 
+# Git Nedir?
 
 Git, dağıtık bir versiyon kontrol sistemidir.  
 

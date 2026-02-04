@@ -43,14 +43,14 @@ A practical and beginner-friendly guide to Git Bash commands, structured step by
 - [Repository Basics](./repository.md)  
   Repository oluşturma ve yerel çalışma.
 
-- [Staging & Commit](./staging-commit.md)  
-  Değişikliklerin takibi ve commit mantığı.
-
 - [Branching](./branching.md)  
   Branch oluşturma, geçiş ve birleştirme.
 
 - [Remote Repositories](./remote.md)  
   GitHub ve remote repository kullanımı.
+  
+- [Staging & Commit](./staging-commit.md)  
+  Değişikliklerin takibi ve commit mantığı.
 
 - [Undo & Fix](./undo.md)  
   Hataları güvenli şekilde geri alma.

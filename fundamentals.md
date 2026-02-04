@@ -1,6 +1,7 @@
 # Git Fundamentals
 
 This document explains the core concepts of Git.
+
 Understanding these fundamentals is essential before using Git commands.
 
 ---
@@ -8,6 +9,7 @@ Understanding these fundamentals is essential before using Git commands.
 ## What is Git?
 
 Git is a distributed version control system.
+
 It allows developers to track changes in files, collaborate with others, and safely manage project history.
 
 ---
@@ -56,20 +58,23 @@ Working Directory → Staging Area → Local Repository
 ## Commit
 
 A commit is a snapshot of the project at a specific point in time.
+
 Each commit has a unique ID, which allows you to return to any previous version safely.
 
 ---
 
 ## HEAD
 
-HEAD is a pointer that represents the current commit you are working on.
-When you switch branches or commits, HEAD moves accordingly.
+`HEAD` is a pointer that represents the current commit you are working on.
+
+When you switch branches or commits, `HEAD` moves accordingly.
 
 ---
 
 ## Why These Concepts Matter
 
 Without understanding these fundamentals:
+
 - Commands feel confusing
 - Mistakes are harder to fix
 - Git becomes frustrating instead of powerful
@@ -81,6 +86,7 @@ Mastering these concepts makes Git predictable and safe to use.
 ## Git Nedir?
 
 Git, dağıtık bir versiyon kontrol sistemidir.  
+
 Dosyalardaki değişiklikleri takip etmeyi, ekip halinde çalışmayı ve proje geçmişini güvenli şekilde yönetmeyi sağlar.
 
 ---
@@ -129,20 +135,23 @@ Working Directory → Staging Area → Local Repository
 ## Commit
 
 Commit, projenin belirli bir andaki anlık görüntüsüdür.  
+
 Her commit benzersiz bir kimliğe (ID) sahiptir ve bu sayede projede güvenli şekilde geçmişe dönülebilir.
 
 ---
 
 ## HEAD
 
-HEAD, üzerinde çalışılan mevcut commit’i gösteren bir işaretçidir.  
-Branch veya commit değiştirildiğinde HEAD de buna göre hareket eder.
+`HEAD`, üzerinde çalışılan mevcut commit’i gösteren bir işaretçidir. 
+
+Branch veya commit değiştirildiğinde `HEAD` de buna göre hareket eder.
 
 ---
 
 ## Bu Kavramlar Neden Önemli?
 
 Bu temeller anlaşılmadan:
+
 - Komutlar karmaşık gelir
 - Hataları düzeltmek zorlaşır
 - Git güçlü değil, sinir bozucu olur

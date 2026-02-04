@@ -15,19 +15,14 @@ Git basics and core concepts
 🇹🇷
 Git temelleri ve ana kavramlar
 
-### - [Repository Basics](./repository.md)  
+
+### - [Basic Commands](basic-commands.md)
+
 🇬🇧
-Creating and cloning repositories
+Commonly used Git commands
 
-🇹🇷 
-Repository oluşturma ve klonlama
-
-### - [Staging & Commit](./staging-commit.md)  
-🇬🇧
-Staging area and commit workflow
-
-🇹🇷 
-Staging alanı ve commit akışı
+🇹🇷
+Sık kullanılan Git komutları
 
 ### - [Branching](./branching.md)
 🇬🇧
@@ -36,19 +31,37 @@ Branching and merging strategies
 🇹🇷 
 Branch (dal) oluşturma ve birleştirme
 
-### - [Remote Repositories](./remote.md)  
+### - [Remote Repositories](./remote-operations.md))  
 🇬🇧
 Working with remote repositories
 
 🇹🇷 
 Uzak repository kullanımı
 
-### - [Undo & Fix](./undo.md)  
+### - [Diff and History](diff-and-history.md) 
+
 🇬🇧
-Undoing changes and fixing mistakes
-  
-🇹🇷
-Değişiklikleri geri alma ve hataları düzeltme
+Inspect changes and commit history
+
+🇹🇷 
+Değişiklikleri inceleyin ve geçmişi kaydedin
+
+### - [Git Bash Command](git-bash-command.md) 
+
+🇬🇧
+Bash commands used in Git workflow
+
+🇹🇷 
+Git iş akışında kullanılan Bash komutları
+
+
+### - [Gitignore](gitignore.md)
+
+🇬🇧
+How to use .gitignore
+
+🇹🇷 
+.gitignore nasil kullanilir
 
 ### - [Cheatsheet](./cheatsheet.md) 
 

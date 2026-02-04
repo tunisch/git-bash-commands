@@ -1,69 +1,125 @@
-# Git Bash Commands Guide
+# Git Bash Commands
+A practical and beginner-friendly  a clean, structured, and bilingual (English / Turkish) guide to Git and Git Bash commands, structured step by step.
 
-A practical and beginner-friendly guide to Git Bash commands, structured step by step.
-
-📌 This repository is designed to help you **understand**, **practice**, and **remember** Git fundamentals.
-
----
-
-## 🇬🇧 English
-
-### 📚 Contents
-
-- [Fundamentals](./fundamentals.md)  
-  Basic Git concepts and terminology.
-
-- [Repository Basics](./repository.md)  
-  Initializing repositories and working locally.
-
-- [Staging & Commit](./staging-commit.md)  
-  How Git tracks changes and creates history.
-
-- [Branching](./branching.md)  
-  Branch creation, switching, and merging.
-
-- [Remote Repositories](./remote.md)  
-  Working with GitHub and remotes.
-
-- [Undo & Fix](./undo.md)  
-  Reverting mistakes safely.
-
-- [Cheatsheet](./cheatsheet.md)  
-  Quick reference for common Git commands.
+📌 This repository is designed to help you understand, practice, and remember Git fundamentals.
 
 ---
 
-## 🇹🇷 Türkçe
+## 📂 Repository Structure | Repo Yapısı
 
-### 📚 İçindekiler
+### - [Fundamentals](./fundamentals.md)  
 
-- [Fundamentals](./fundamentals.md)  
-  Git’in temel kavramları ve terimleri.
+🇬🇧
+Git basics and core concepts
 
-- [Repository Basics](./repository.md)  
-  Repository oluşturma ve yerel çalışma.
+🇹🇷
+Git temelleri ve ana kavramlar
 
-- [Branching](./branching.md)  
-  Branch oluşturma, geçiş ve birleştirme.
+### - [Repository Basics](./repository.md)  
+🇬🇧
+Creating and cloning repositories
 
-- [Remote Repositories](./remote.md)  
-  GitHub ve remote repository kullanımı.
+🇹🇷 
+Repository oluşturma ve klonlama
+
+### - [Staging & Commit](./staging-commit.md)  
+🇬🇧
+Staging area and commit workflow
+
+🇹🇷 
+Staging alanı ve commit akışı
+
+### - [Branching](./branching.md)
+🇬🇧
+Branching and merging strategies
+
+🇹🇷 
+Branch (dal) oluşturma ve birleştirme
+
+### - [Remote Repositories](./remote.md)  
+🇬🇧
+Working with remote repositories
+
+🇹🇷 
+Uzak repository kullanımı
+
+### - [Undo & Fix](./undo.md)  
+🇬🇧
+Undoing changes and fixing mistakes
   
-- [Staging & Commit](./staging-commit.md)  
-  Değişikliklerin takibi ve commit mantığı.
+🇹🇷
+Değişiklikleri geri alma ve hataları düzeltme
 
-- [Undo & Fix](./undo.md)  
-  Hataları güvenli şekilde geri alma.
+### - [Cheatsheet](./cheatsheet.md) 
 
-- [Cheatsheet](./cheatsheet.md)  
-  Sık kullanılan Git komutları – hızlı bakış.
+🇬🇧
+Quick reference commands
+
+🇹🇷 
+Hızlı komut özeti
 
 ---
 
-## 🎯 Purpose
+## 🌱 Branch Strategy | Branch Yapısı
 
-This repo is not just a command list.  
-It explains **why** Git works the way it does.
+🇬🇧
 
-Bu repo sadece komut ezberi için değil,  
-Git’in **mantığını anlamak** için hazırlanmıştır.
+* main: Stable and clean documentation
+* git-bash-command: Development and content updates
+
+🇹🇷
+
+* main: Kararlı ve temiz dokümantasyon
+* git-bash-command: Geliştirme ve içerik güncellemeleri
+
+---
+
+## 🔀 Merge Plan | Birleştirme Planı
+
+🇬🇧
+
+1. Review all markdown files in the development branch
+2. Ensure consistent bilingual format
+3. Merge into main branch after validation
+
+🇹🇷
+
+1. Geliştirme branch’indeki tüm markdown dosyalarını gözden geçir
+2. İngilizce / Türkçe format tutarlılığını kontrol et
+3. Doğrulama sonrası main branch’e merge et
+
+---
+
+## 🎯 Purpose | Amaç
+
+🇬🇧 
+
+This repository is designed for:
+
+* Beginners learning Git
+* Developers needing a quick reference
+* Demonstrating Git knowledge professionally
+
+🇹🇷
+
+Bu repo şu amaçlarla hazırlanmıştır:
+
+* Git öğrenen başlangıç seviyesindekiler
+* Hızlı başvuru kaynağı arayan geliştiriciler
+* Git bilgisini profesyonel olarak göstermek
+
+---
+
+## 🚀 Next Steps | Sonraki Adımlar
+
+🇬🇧
+
+* Add examples folder with real terminal outputs
+* Improve visuals and diagrams
+* Keep documentation minimal and clear
+
+🇹🇷
+
+* Gerçek terminal çıktıları içeren examples klasörü eklemek
+* Görseller ve diyagramlar eklemek
+* Dokümantasyonu sade ve anlaşılır tutmak

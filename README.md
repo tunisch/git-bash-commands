@@ -1,48 +1,69 @@
-# Git Bash Commands
+# Git Bash Commands Guide
 
-This repository is created to help users **learn Git Bash commands in a clear and simple way**.  
-It is designed both for beginners who are new to Git Bash and for developers who want a quick reference.
+A practical and beginner-friendly guide to Git Bash commands, structured step by step.
 
-The focus of this repository is not just listing commands, but explaining **what they do**, **how they work**, and **when to use them**.
-
----
-
-## Repository Content
-
-- **git-bash-command.md**  
-  The main document of this repository.  
-  It contains Git Bash commands with explanations, covering basic file operations, directory navigation, and common Git Bash usage.
+📌 This repository is designed to help you **understand**, **practice**, and **remember** Git fundamentals.
 
 ---
 
-## Who Is This For?
+## 🇬🇧 English
 
-- Beginners learning Git and Git Bash  
-- Software engineering students  
-- Developers who want to understand commands instead of memorizing them  
-- Anyone looking for a simple Git Bash reference
+### 📚 Contents
+
+- [Fundamentals](./fundamentals.md)  
+  Basic Git concepts and terminology.
+
+- [Repository Basics](./repository.md)  
+  Initializing repositories and working locally.
+
+- [Staging & Commit](./staging-commit.md)  
+  How Git tracks changes and creates history.
+
+- [Branching](./branching.md)  
+  Branch creation, switching, and merging.
+
+- [Remote Repositories](./remote.md)  
+  Working with GitHub and remotes.
+
+- [Undo & Fix](./undo.md)  
+  Reverting mistakes safely.
+
+- [Cheatsheet](./cheatsheet.md)  
+  Quick reference for common Git commands.
 
 ---
 
-## How to Use
+## 🇹🇷 Türkçe
 
-1. Clone this repository or browse it directly on GitHub.
-2. Open the `git-bash-command.md` file.
-3. Read through the commands or use it as a reference when needed.
+### 📚 İçindekiler
+
+- [Fundamentals](./fundamentals.md)  
+  Git’in temel kavramları ve terimleri.
+
+- [Repository Basics](./repository.md)  
+  Repository oluşturma ve yerel çalışma.
+
+- [Staging & Commit](./staging-commit.md)  
+  Değişikliklerin takibi ve commit mantığı.
+
+- [Branching](./branching.md)  
+  Branch oluşturma, geçiş ve birleştirme.
+
+- [Remote Repositories](./remote.md)  
+  GitHub ve remote repository kullanımı.
+
+- [Undo & Fix](./undo.md)  
+  Hataları güvenli şekilde geri alma.
+
+- [Cheatsheet](./cheatsheet.md)  
+  Sık kullanılan Git komutları – hızlı bakış.
 
 ---
 
-## Purpose
+## 🎯 Purpose
 
-This repository is not a command dump.  
-Its goal is to help you understand **why** and **how** Git Bash commands are used.
+This repo is not just a command list.  
+It explains **why** Git works the way it does.
 
----
-
-## Future Improvements
-
-Over time, this repository may be expanded with:
-- Additional commands
-- More detailed explanations
-- Topic-based files for better organization
-
+Bu repo sadece komut ezberi için değil,  
+Git’in **mantığını anlamak** için hazırlanmıştır.

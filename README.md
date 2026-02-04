@@ -8,7 +8,7 @@ Bu repo, Git ve Git Bash komutlarını **İngilizce ve Türkçe** olarak, düzen
 
 ## 📂 Repository Structure | Repo Yapısı
 
-### - fundamentals.md
+### - [Fundamentals](./fundamentals.md)  
 
 🇬🇧
 Git basics and core concepts
@@ -16,42 +16,42 @@ Git basics and core concepts
 🇹🇷
 Git temelleri ve ana kavramlar
 
-### - repository.md
+### - [Repository Basics](./repository.md)  
 🇬🇧
 Creating and cloning repositories
 
 🇹🇷 
 Repository oluşturma ve klonlama
 
-### - staging-commit.md
+### - [Staging & Commit](./staging-commit.md)  
 🇬🇧
 Staging area and commit workflow
 
 🇹🇷 
 Staging alanı ve commit akışı
 
-### - branching.md
+### - [Branching](./branching.md)
 🇬🇧
 Branching and merging strategies
 
 🇹🇷 
 Branch (dal) oluşturma ve birleştirme
 
-### - remote.md
+### - [Remote Repositories](./remote.md)  
 🇬🇧
 Working with remote repositories
 
 🇹🇷 
 Uzak repository kullanımı
 
-### - undo.md
+### - [Undo & Fix](./undo.md)  
 🇬🇧
 Undoing changes and fixing mistakes
   
 🇹🇷
 Değişiklikleri geri alma ve hataları düzeltme
 
-### - cheatsheet.md
+### - [Cheatsheet](./cheatsheet.md) 
 
 🇬🇧
 Quick reference commands

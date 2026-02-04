@@ -1,8 +1,7 @@
 # Git Bash Commands
+A practical and beginner-friendly  a clean, structured, and bilingual (English / Turkish) guide to Git and Git Bash commands, structured step by step.
 
-This repository provides a clean, structured, and bilingual (English / Turkish) guide to Git and Git Bash commands.
-
-Bu repo, Git ve Git Bash komutlarını **İngilizce ve Türkçe** olarak, düzenli ve öğretici bir yapıda sunar.
+📌 This repository is designed to help you understand, practice, and remember Git fundamentals.
 
 ---
 

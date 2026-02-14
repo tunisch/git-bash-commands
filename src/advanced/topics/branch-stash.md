@@ -1,7 +1,11 @@
 # Branch Operations and the Stash Concept (TR & EN)
 ---
 ## 🇬🇧  Branch Operations and the Stash Concept
-When working in a team, you are expected to make your changes on a separate branch. After completing your work, you merge your branch into the main/master branch.
+- If you are working with a team, you make the expected changes on a new branch. Afterwards, you merge this branch with the main branch, which is master. In this lesson, we cover many topics related to branch operations.
+
+- Sometimes, after committing, you write hundreds of lines of code. Then suddenly, you may need to make changes to a previous version of the code you wrote. In this case, you need to save the commands you wrote somewhere. In scenarios like this, git stash saves us from a very important problem.
+
+If you are working with a team, you are expected to make changes on a **new branch**. After completing your development on this branch, you merge the branch you created with the **main branch**.
 
 This section covers:
 - Creating branches
@@ -172,8 +176,11 @@ git stash pop
 ---
 
 # 🇹🇷 Branch İşlemleri ve Stash Kavramı 
+- Bir ekip ile beraber çalışıyorsanız sizden beklenen değişiklikleri oluşturacağınız yeni bir branch (dal) üzerinde yaparsınız. Daha sonrasında bu oluşturduğunuz branch’ i ana branch olan master ile birleştirirsiniz. İşte bu ders içerisinde branch işlemlerine dair birçok konuyu ele alıyoruz.
 
-Bir ekip ile beraber çalışıyorsanız, sizden beklenen değişiklikleri **yeni bir branch (dal)** üzerinde yapmanızdır.  Bu branch üzerinde geliştirmelerinizi tamamladıktan sonra, oluşturduğunuz branch’i **ana branch (main/master)** ile birleştirirsiniz.
+- Bazen Commit işlemi yaptıktan sonra yüzlerce satır komut yazarsınız. Sonra birden yazdığınız kodlardan önceki versiyon üzerinde değişiklik yapmanız gerekebilir. Bu durumda bu yazdığınız komutları bir yere saklamanız gerekir. İşte bu tarz senaryolarda git stash bizi çok önemli bir sorundan kurtarıyor.
+
+Bir ekip ile beraber çalışıyorsanız, sizden beklenen değişiklikleri **yeni bir branch (dal)** üzerinde yapmanızdır. Bu branch üzerinde geliştirmelerinizi tamamladıktan sonra, oluşturduğunuz branch’i **ana branch (main)** ile birleştirirsiniz.
 
 Bu bölümde aşağıdaki konuları ele alıyoruz:
 

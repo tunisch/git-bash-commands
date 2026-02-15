@@ -13,7 +13,7 @@ This section also covers **conflict resolution**, which happens when Git cannot 
 
 `git merge` combines two branches by creating a **new merge commit**.
 
-### ✔️ Example
+**Example**
 ```bash
 git switch main
 git merge feature-login
@@ -24,7 +24,10 @@ git merge feature-login
 - Shows exactly when branches diverged
 - Creates a merge commit
 - Safe for team collaboration
+
+
 ✔️ Merge History Example
+```bash
 A --- B --- C --- D (main)
        \ 
         E --- F (feature)
@@ -34,22 +37,26 @@ After merge:
 A --- B --- C --- D --- M (main)
        \           /
         E --- F ---
+```
+---
 
-
-
-2. What is Rebase?
+## 2. What is Rebase?
 git rebase rewrites commit history by placing your commits on top of another branch.
 ✔️ Example
+```bash
 git switch feature-login
 git rebase main
-
+```
 
 ✔️ What rebase does
 - Creates a linear history
 - Removes merge commits
 - Makes history cleaner
 - Rewrites commit IDs (dangerous on shared branches)
+
+
 ✔️ Rebase History Example
+```bash
 Before:
 A --- B --- C (main)
        \
@@ -58,8 +65,9 @@ A --- B --- C (main)
 
 After:
 A --- B --- C --- D' --- E' (feature)
+```
 
-
+---
 
 ## 3. Merge vs Rebase Summary (EN)
 
@@ -71,18 +79,21 @@ A --- B --- C --- D' --- E' (feature)
 | Safe for team use         | Yes                       | Only on local branches         |
 | Recommended for           | Team collaboration         | Personal feature branches      |
 
+---
 
-4. What is a Conflict?
+## 4. What is a Conflict?
 A conflict happens when:
 - Two branches modify the same line
 - Git cannot decide which version is correct
 Example conflict markers:
+```bash
 <<<<<<< HEAD
 Your changes
 =======
 Other branch changes
 >>>>>>> feature-login
-
+```
+----
 
 ## Conflict Resolution Summary (EN)
 
@@ -95,33 +106,46 @@ Other branch changes
 | 5. Mark resolved         | `git add .`                                     |
 | 6. Complete operation    | Merge: `git commit` / Rebase: `git rebase --continue` |
 
+---
 
-5. How to Resolve Conflicts
-Step 1 — Open the file
+## 5. How to Resolve Conflicts
+
+✔️ Step 1 — Open the file
+
 Find the conflict markers:
+```bash
 <<<<<<<
 =======
 >>>>>>>
+```
 
+✔️ Step 2 — Choose the correct version
 
-Step 2 — Choose the correct version
 You can keep:
 - Your version
 - Their version
 - A combination
-Step 3 — Remove conflict markers
+
+✔️ Step 3 — Remove conflict markers
 Save the cleaned file.
-Step 4 — Mark as resolved
+
+✔️ Step 4 — Mark as resolved
+```bash
 git add .
+```
 
+✔️ Step 5 — Complete the merge or rebase
 
-Step 5 — Complete the merge or rebase
 For merge:
+```bash
 git commit
+```
 
-
-For rebase:
+✔️ For rebase:
+```bash
 git rebase --continue
+```
+---
 
 ## 🇬🇧 Advanced Git Topics — Summary Tables (English)
 ## Cherry-pick Summary (EN)
@@ -134,6 +158,8 @@ git rebase --continue
 | Rewrites history            | Yes (creates new commit ID)                      |
 | Safe for team use           | Yes, if used carefully                           |
 
+---
+
 ## Fast-forward Merge Summary (EN)
 
 | Action / Behavior           | Description                                      |
@@ -144,6 +170,7 @@ git rebase --continue
 | History style               | Linear                                           |
 | Recommended for             | Simple feature merges                            |
 
+---
 
 ## No-FF (No Fast-forward) Merge Summary (EN)
 
@@ -155,6 +182,9 @@ git rebase --continue
 | History style               | Non-linear                                       |
 | Recommended for             | Team workflows, PR history clarity               |
 
+---
+
+
 ## Interactive Rebase Summary (EN)
 
 | Action / Behavior           | Description                                      |
@@ -164,6 +194,7 @@ git rebase --continue
 | Rewrites history            | Yes                                              |
 | Recommended for             | Cleaning commit history before merge             |
 
+---
 
 ## Squash Summary (EN)
 
@@ -174,6 +205,7 @@ git rebase --continue
 | Command (merge)             | `git merge --squash feature`                     |
 | Result                      | One clean commit                                 |
 
+---
 
 ## Merge Strategies Summary (EN)
 
@@ -183,6 +215,8 @@ git rebase --continue
 | ours         | Keep current branch changes, ignore the other    |
 | theirs       | Keep other branch changes (rarely used manually) |
 | octopus      | Merge 3+ branches at once                        |
+
+----
 
 ## Octopus Merge Summary (EN)
 
@@ -194,7 +228,7 @@ git rebase --continue
 | Common?                     | No, very rare                                    |
 
 
-
+---
 
 
 
@@ -204,12 +238,14 @@ merge ve rebase.
 Her ikisi de değişiklikleri bir araya getirir, ancak çalışma şekilleri tamamen farklıdır.
 Bu bölümde ayrıca conflict çözümü konusunu da ele alıyoruz.
 
-1. Merge Nedir?
+## 1. Merge Nedir?
 git merge, iki branch’i yeni bir merge commit’i oluşturarak birleştirir.
-✔️ Örnek
+
+**Örnek**
+```bash
 git switch main
 git merge feature-login
-
+```
 
 ✔️ Merge ne yapar?
 - Tüm commit geçmişini korur
@@ -217,18 +253,24 @@ git merge feature-login
 - Merge commit oluşturur
 - Ekip çalışması için güvenlidir
 
-2. Rebase Nedir?
+---
+
+## 2. Rebase Nedir?
 git rebase, commit geçmişini yeniden yazar ve commit’lerinizi başka bir branch’in en üstüne taşır.
-✔️ Örnek
+
+**Örnek**
+```bash
 git switch feature-login
 git rebase main
-
+```
 
 ✔️ Rebase ne yapar?
 - Daha temiz, çizgisel bir geçmiş oluşturur
 - Merge commit’lerini kaldırır
 - Commit ID’lerini değiştirir (dikkat!)
 - Paylaşılan branch’lerde önerilmez
+
+---
 
 ## 3. Merge vs Rebase Özet Tablosu (TR)
 
@@ -240,15 +282,22 @@ git rebase main
 | Ekip için güvenli         | Evet                          | Sadece lokal branch’lerde     |
 | Önerilen kullanım         | Ekip çalışması                | Kişisel feature branch’leri   |
 
+---
 
-4. Conflict Nedir?
+## 4. Conflict Nedir?
+
 Conflict, iki branch aynı satırı değiştirdiğinde ve Git hangi versiyonun doğru olduğuna karar veremediğinde oluşur.
+
 Örnek conflict işaretleri:
+```bash
 <<<<<<< HEAD
 Sizin değişikliğiniz
 =======
 Diğer branch’in değişikliği
 >>>>>>> feature-login
+```
+
+---
 
 
 ## Conflict Çözümü Özet Tablosu (TR)
@@ -262,33 +311,45 @@ Diğer branch’in değişikliği
 | 5. Çözümü işaretle       | `git add .`                                     |
 | 6. İşlemi tamamla        | Merge: `git commit` / Rebase: `git rebase --continue` |
 
+---
 
-5. Conflict Nasıl Çözülür?
-Adım 1 — Dosyayı aç
-Conflict işaretlerini bul:
+## 5. Conflict Nasıl Çözülür?
+
+✔️ Adım 1 — Dosyayı aç
+
+- Conflict işaretlerini bul:
+```bash
 <<<<<<<
 =======
 >>>>>>>
+```
 
-
-Adım 2 — Doğru versiyonu seç
+✔️ Adım 2 — Doğru versiyonu seç
 - Sizin versiyonunuz
 - Onların versiyonu
 - İkisini birleştirme
-Adım 3 — İşaretleri temizle
+
+
+✔️  Adım 3 — İşaretleri temizle
 Dosyayı kaydedin.
-Adım 4 — Çözümü işaretle
+
+✔️ Adım 4 — Çözümü işaretle
+```bash
 git add .
+```
 
-
-Adım 5 — İşlemi tamamla
+✔️ Adım 5 — İşlemi tamamla
 Merge için:
+```bash
 git commit
+```
 
-
-Rebase için:
+✔️ Rebase için:
+```bash
 git rebase --continue
+```
 
+---
 
 ## 🇹🇷 Gelişmiş Git Konuları — Özet Tabloları (Türkçe)
 
@@ -303,6 +364,8 @@ git rebase --continue
 | Ekip için güvenli          | Evet, dikkatli kullanılırsa                       |
 
 
+---
+
 ## Fast-forward Merge Özeti (TR)
 
 | İşlem / Davranış           | Açıklama                                          |
@@ -313,6 +376,7 @@ git rebase --continue
 | Geçmiş yapısı              | Çizgisel (linear)                                 |
 | Önerilen kullanım          | Basit feature birleştirmeleri                     |
 
+---
 
 ## No-FF Merge Özeti (TR)
 
@@ -324,6 +388,7 @@ git rebase --continue
 | Geçmiş yapısı              | Dallanmış (non-linear)                            |
 | Önerilen kullanım          | Ekip çalışması, PR geçmişinin korunması           |
 
+---
 
 ## Interactive Rebase Özeti (TR)
 
@@ -334,6 +399,7 @@ git rebase --continue
 | Geçmişi yeniden yazar      | Evet                                              |
 | Önerilen kullanım          | Merge öncesi commit geçmişini temizlemek          |
 
+---
 
 ## Squash Özeti (TR)
 
@@ -344,6 +410,9 @@ git rebase --continue
 | Komut (merge)              | `git merge --squash feature`                      |
 | Sonuç                      | Temiz, tek commit                                 |
 
+---
+
+
 ## Merge Strategies Özeti (TR)
 
 | Strateji     | Açıklama                                          |
@@ -353,6 +422,9 @@ git rebase --continue
 | theirs       | Diğer branch’i korur (manuel kullanım nadir)      |
 | octopus      | 3+ branch’i aynı anda birleştirir                 |
 
+
+---
+
 ## Octopus Merge Özeti (TR)
 
 | İşlem / Davranış           | Açıklama                                          |
@@ -361,9 +433,3 @@ git rebase --continue
 | Komut                      | `git merge branch1 branch2 branch3`               |
 | Kullanım alanı             | Büyük otomatik birleştirmeler                     |
 | Yaygın mı?                 | Hayır, çok nadir                                  |
-
-
-
-
-
-

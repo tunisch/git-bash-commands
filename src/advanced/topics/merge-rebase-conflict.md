@@ -228,6 +228,53 @@ git rebase --continue
 | Common?                     | No, very rare                                    |
 
 
+# 🚫 Git Abort Guide (English Version)
+
+## 1) Merge Abort
+Explanation:
+
+If a merge results in conflicts and you decide not to continue, this command cancels the merge and restores the repository to the state before the merge began.
+
+**Command**
+```bash
+git merge --abort
+```
+
+---
+
+## 2) Rebase Abort
+Explanation:
+
+If a rebase becomes complicated or produces conflicts you don’t want to resolve, this command cancels the entire rebase process and returns the repository to its pre-rebase state.
+
+**Command**
+```bash
+git rebase --abort
+```
+---
+
+## 3) Cherry-pick Abort
+Explanation:
+
+If a cherry-pick operation encounters conflicts and you want to stop, this command cancels the cherry-pick and resets the working directory.
+
+**Command**
+```bash
+git cherry-pick --abort
+```
+
+---
+
+## 🚫 Git Abort Commands (English)
+
+| Operation | Abort Command | Description |
+|-----------|----------------|-------------|
+| Merge | `git merge --abort` | Cancels the ongoing merge and restores the repository to its pre-merge state. |
+| Rebase | `git rebase --abort` | Cancels the entire rebase process and returns to the state before the rebase began. |
+| Cherry-pick | `git cherry-pick --abort` | Cancels the cherry-pick operation and resets the working directory. |
+
+
+
 ---
 
 
@@ -435,3 +482,53 @@ git rebase --continue
 | Komut                      | `git merge branch1 branch2 branch3`               |
 | Kullanım alanı             | Büyük otomatik birleştirmeler                     |
 | Yaygın mı?                 | Hayır, çok nadir                                  |
+
+
+---
+
+# 🚫 Git Abort Rehberi (TR–EN Bilingual)
+
+### 1) Merge Abort
+Açıklama:
+
+Bir merge sırasında conflict çıktı ve devam etmek istemiyorsan, merge’i tamamen iptal eder ve repo’yu merge başlamadan önceki hâline döndürür.
+
+🔧 Komut / Command
+```bash
+git merge --abort
+```
+
+---
+
+### 2) Rebase Abort
+Açıklama:
+
+Rebase sırasında işler karıştıysa, tüm rebase sürecini iptal eder ve rebase başlamadan önceki commit’e geri döner.
+
+🔧 Komut / Command
+```bash
+git rebase --abort
+```
+
+--- 
+
+### 4) Cherry-pick Abort
+Açıklama:
+
+Cherry-pick sırasında conflict olursa ve devam etmek istemiyorsan, işlemi iptal eder.
+
+🔧 Komut / Command
+```bash
+git cherry-pick --abort
+```
+---
+
+### 🚫 Git Abort Komutları (Türkçe)
+
+| İşlem | Abort Komutu | Açıklama |
+|-------|--------------|----------|
+| Merge | `git merge --abort` | Devam eden merge işlemini iptal eder ve repo’yu merge başlamadan önceki hâline döndürür. |
+| Rebase | `git rebase --abort` | Rebase sürecini tamamen iptal eder ve rebase öncesi commit’e geri döner. |
+| Cherry-pick | `git cherry-pick --abort` | Cherry-pick sırasında oluşan çatışmaları iptal eder ve işlemi geri alır. |
+
+

@@ -74,6 +74,7 @@ git branch -D feature-login
 ```
 
 --- 
+
 ### 6. Merging Branches
 Switch to main:
 ```gitbash
@@ -84,7 +85,7 @@ git checkout main
 ```gitbash
 git merge feature-login
 ```
-----
+---
 
 ### 7. Merge Conflicts
 Conflicts occur when the same lines are changed in two branches.
@@ -104,6 +105,148 @@ git commit -m "Resolve merge conflict"
 - Git stash: It saves the changes we've made since our last commit and brings them back when we need them.
 Sometimes you need to temporarily save your changes without committing them. This is where git stash becomes extremely useful.
 
+#### 🇬🇧 English Version of Your Stash Explanation
+
+#### 🔥 1) Which branch does a stash belong to?
+A stash is not tied to the branch where it was created.
+
+This is extremely important.
+
+A stash is saved to the repository, not to a specific branch.
+
+**So:**
+- You run git stash while on feature/login
+- Then you switch to main
+
+👉 The stash is still there
+
+👉 The stash is accessible from any branch
+
+Stash = a “temporary change box” that is branch‑independent.
+
+---
+
+#### 🔥 2) Does stash disappear when switching branches?
+❌ No.
+
+Even if you switch branches, the stash remains exactly where it was.
+
+Example:
+```bash
+git switch feature/login
+git stash
+git switch main
+```
+
+✔️ List stashes:
+```bash
+git stash list
+```
+
+**Output:**
+```bash
+stash@{0}: On feature/login: WIP
+```
+
+As you see, the stash is still there.
+
+---
+
+#### 🔥 3) Does stash get deleted when Git Bash is closed?
+❌ No.
+
+A stash does not disappear when:
+
+- The terminal closes
+- The computer shuts down
+- VS Code is closed
+- Hours, days, or even months pass
+
+A stash is stored inside the repository, not in the terminal session.
+
+---
+
+#### 🔥 4) When does a stash get deleted?
+A stash is deleted only in these cases:
+
+✔️ 1) When you run git stash pop
+Pop = apply + delete
+```bash
+git stash pop
+```
+
+✔️ 2) When you run git stash drop
+```bash
+git stash drop stash@{0}
+```
+
+✔️ 3) When you run git stash clear
+```bash
+git stash clear
+```
+
+Outside of these, a stash never deletes itself.
+
+---
+
+#### 🔥 5) Can you apply a stash to another branch?
+Yes — a stash can be applied from any branch to any branch.
+
+**Example:**
+
+You created a stash on feature/login:
+```bash
+git stash
+```
+
+✔️ Then you switch to main:
+```bash
+git switch main
+git stash apply
+```
+
+👉 The stash is applied to main
+
+👉 This is completely normal and very common
+
+---
+
+#### 🔥 6) What does a stash store?
+
+A stash stores:
+- Working directory changes
+- Staged changes
+- Deleted files
+- Added files
+But it does NOT store commits.
+
+---
+
+#### 🔥 7) Does a stash have an expiration time?
+❌ No.
+
+A stash has no time limit.
+
+You can open a stash even one year later if you want.
+
+
+
+## Stash Behavior Summary (EN)
+
+| Question / Scenario                               | Answer / Explanation                                                              |
+|---------------------------------------------------|------------------------------------------------------------------------------------|
+| Is stash tied to a specific branch?               | No. Stash belongs to the repository, not to a branch.                              |
+| Does stash disappear when switching branches?     | No. Stash remains available across all branches.                                   |
+| Does stash get deleted when Git Bash closes?      | No. Closing the terminal does not affect stash.                                    |
+| Does stash get deleted when the computer shuts down? | No. Stash is stored inside the repository and persists.                          |
+| When does stash get deleted?                      | Only when using `git stash pop`, `git stash drop`, or `git stash clear`.           |
+| Can stash be applied to another branch?           | Yes. It can be applied from any branch.                                            |
+| Does stash have a time limit?                     | No. It stays forever unless manually removed.                                      |
+| What does stash store?                            | Working directory changes, staged changes, added/removed files.                    |
+| Does stash include commits?                       | No. Stash stores uncommitted changes, not commits.                                 |
+
+---
+
 ### 8.1 Creating a Stash
 ```gitbash
 git stash
@@ -114,12 +257,14 @@ git stash
 git stash push -m "Login form draft"
 ```
 
+---
 
 ### 8.2 Listing Stashes
 ```gitbash
 git stash list
 ```
 
+---
 
 ### 8.3 Applying a Stash
 ```gitbash
@@ -132,6 +277,7 @@ Changes are reverted to the desired state but are not removed from the list.
 git stash apply stash@{1}
 ```
 
+---
 
 ### 8.4 Deleting a Stash
 ```gitbash
@@ -143,12 +289,14 @@ git stash drop stash@{0}
 git stash clear
 ```
 
+---
 
 ### 8.5 Pop (Apply + Delete)
 It goes back to the last commit and deletes the most recent change while doing so, and the changes do not appear in the list.
 ```gitbash
 git stash pop
 ```
+---
 
 ###  Modern Git
 
@@ -285,6 +433,139 @@ git commit -m "Resolve merge conflict"
 - Git stash : En son ki yaptigimiz committen itibaren yaptigimiz degisiklikleri bir kosede saklayip ihtiyacimiz oldugu zamanda bunlari bize getirmeye yarar.
 Bazen commit yapmadan geçici olarak değişiklikleri saklamak istersiniz.
 
+Stash aslında branch’e değil, repository’e kaydedilir.
+
+
+### 🔥 1) Stash hangi branch’e aittir?
+Stash oluşturulduğu branch’e bağlı değildir.
+
+Bu çok kritik.
+
+Stash aslında branch’e değil, repository’e kaydedilir.
+
+Yani:
+- feature/login branch’indeyken git stash yaptın
+- Sonra main branch’ine geçtin
+👉 Stash hala durur
+👉 Stash her branch’ten erişilebilir
+
+Stash = branch bağımsız bir “geçici değişiklik kutusu”.
+
+---
+
+### 🔥 2) Branch değiştirince stash kaybolur mu?
+❌ Hayır.
+Branch değiştirsen bile stash olduğu yerde durur.
+
+**Örnek:**
+```bash
+git switch feature/login
+git stash
+git switch main
+```
+
+✔️ Stash listesi:
+```bash
+git stash list
+```
+
+**Çıktı:**
+```bash
+stash@{0}: On feature/login: WIP
+```
+
+---
+
+Gördüğün gibi stash hala orada.
+
+### 🔥 3) Git Bash kapanınca stash silinir mi?
+❌ Hayır.
+**Stash:**
+- Terminal kapanınca silinmez
+- Bilgisayar kapanınca silinmez
+- VS Code kapanınca silinmez
+- 1 gün, 1 hafta, 1 ay sonra bile durur
+
+Stash repo içinde saklanır, terminalde değil.
+
+---
+
+### 🔥 4) Stash ne zaman silinir?
+Stash sadece şu durumlarda silinir:
+
+✔️ 1) git stash pop yaparsan
+Pop = uygula + sil
+git stash pop
+
+
+✔️ 2) git stash drop yaparsan
+git stash drop stash@{0}
+
+
+✔️ 3) git stash clear yaparsan
+```bash
+git stash clear
+```
+---
+
+Bunların dışında stash kendiliğinden asla silinmez.
+
+### 🔥 5) Stash’i başka branch’e uygulayabilir misin?
+> Evet, stash her branch’e uygulanabilir.
+
+**Örnek:**
+✔️ feature/login branch’inde stash yaptın:
+```bash
+git stash
+```
+
+✔️ Sonra main branch’ine geçtin:
+```bash
+git switch main
+git stash apply
+```
+
+👉 Stash main’e uygulanır
+
+👉 Bu tamamen normal ve yaygın bir kullanım
+
+---
+
+### 🔥 6) Stash’in içinde ne saklanır?
+Stash şunları saklar:
+
+- Çalışma dizinindeki değişiklikler
+- Staged değişiklikler
+- Silinen dosyalar
+- Eklenen dosyalar
+
+Ama commit’leri saklamaz.
+
+---
+
+### 🔥 7) Stash’in ömrü var mı?
+❌ Hayır.
+Stash’in bir zaman sınırı yoktur.
+
+İstersen 1 yıl sonra bile stash’i açabilirsin.
+
+## 🎯Stash Davranışı Özeti (TR)
+
+| Soru / Durum                                      | Cevap / Açıklama                                                                 |
+|---------------------------------------------------|----------------------------------------------------------------------------------|
+| Stash branch’e bağlı mı?                          | Hayır. Stash branch’e değil, tüm repo’ya kaydedilir.                             |
+| Branch değiştirince stash kaybolur mu?            | Hayır. Branch değiştirsen bile stash durmaya devam eder.                         |
+| Git Bash kapanınca stash silinir mi?              | Hayır. Terminal kapanması stash’i etkilemez.                                     |
+| Bilgisayar kapanınca stash silinir mi?            | Hayır. Stash repo içinde saklanır, silinmez.                                     |
+| Stash ne zaman silinir?                           | `git stash pop`, `git stash drop`, `git stash clear` komutlarıyla.               |
+| Stash başka branch’e uygulanabilir mi?            | Evet. Her branch’ten uygulanabilir.                                              |
+| Stash’in ömrü var mı?                             | Hayır. Sınırsızdır, kendiliğinden silinmez.                                      |
+| Stash içinde ne saklanır?                         | Çalışma dizini + staged değişiklikler + eklenen/silinen dosyalar.                |
+| Commit’ler stash’e dahil olur mu?                 | Hayır. Stash commit değil, sadece değişiklik saklar.                             |
+
+
+
+
 **Örneğin:**
 
 - Yüzlerce satır kod yazdınız
@@ -293,6 +574,7 @@ Bazen commit yapmadan geçici olarak değişiklikleri saklamak istersiniz.
 İşte bu durumda git stash hayat kurtarır.
 
 ---
+
 ## 8.1 Stash Oluşturma
 ```gitbash
 git stash
@@ -304,6 +586,7 @@ git stash push -m "Login form draft"
 ```
 
 ---
+
 ## 8.2 Stash Listesini Görmek
 ```gitbash
 git stash list
@@ -344,6 +627,16 @@ Son commit e geri gider ve giderken en son ki yapilan degisikligi siler ve liste
 ```gitbash
 git stash pop
 ```
+---
+
+##  Modern Git
+
+- Branch oluşturma → git switch -c feature
+- Branch değiştirme → git switch feature
+- Dosya geri alma → git restore file.txt
+- Staged geri alma → git restore --staged file.txt
+
+---
 
 ## Modern Git vs Classic Git
 
@@ -357,13 +650,3 @@ git stash pop
 | Commit içeriğini değiştirme  | Aynı                         | Aynı (`git commit --amend`) |
 | Commit silme / reset         | Aynı                         | Aynı (`git reset`)          |
 | Stash işlemleri              | Aynı                         | Aynı (`git stash`)          |
-
-##  Modern Git
-
-- Branch oluşturma → git switch -c feature
-- Branch değiştirme → git switch feature
-- Dosya geri alma → git restore file.txt
-- Staged geri alma → git restore --staged file.txt
-
-
-

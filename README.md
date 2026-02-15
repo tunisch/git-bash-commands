@@ -5,6 +5,25 @@ A practical and beginner-friendly  a clean, structured, and bilingual (English /
 
 ---
 
+## 🔴 Advanced Topics
+
+Deep Git concepts, conflict resolution, and recovery operations.  
+This section includes advanced workflows and detailed explanations.
+
+### Topics
+- [Branch Operations and the Stash Concept ](src/advanced/topics/branch-stash.md)
+- [📄 Commit, Diff, Log, Amend ](src/advanced/topics/commit-diff-log-amend.md)
+- [Merge vs Rebase Differences & Handling Conflicts](src/advanced/topics/merge-rebase-conflict.md)
+
+> New advanced topics will be added continuously.
+
+```bash
+src/ ├── beginner/ ├── intermediate/ └── advanced/ └── topics/
+```
+
+---
+
+
 ## 📂 Repository Structure | Repo Yapısı
 
 ### - [Fundamentals](./fundamentals.md)  
@@ -78,28 +97,14 @@ Hızlı komut özeti
 🇬🇧
 
 * main: Stable and clean documentation
+* advanced-topics: advanced topic documantation
 * git-bash-command: Development and content updates
 
 🇹🇷
 
 * main: Kararlı ve temiz dokümantasyon
+* advanced-topics: ileri duzey konularin dokümantasyonu
 * git-bash-command: Geliştirme ve içerik güncellemeleri
-
----
-
-## 🔀 Merge Plan | Birleştirme Planı
-
-🇬🇧
-
-1. Review all markdown files in the development branch
-2. Ensure consistent bilingual format
-3. Merge into main branch after validation
-
-🇹🇷
-
-1. Geliştirme branch’indeki tüm markdown dosyalarını gözden geçir
-2. İngilizce / Türkçe format tutarlılığını kontrol et
-3. Doğrulama sonrası main branch’e merge et
 
 ---
 
@@ -136,3 +141,22 @@ Bu repo şu amaçlarla hazırlanmıştır:
 * Gerçek terminal çıktıları içeren examples klasörü eklemek
 * Görseller ve diyagramlar eklemek
 * Dokümantasyonu sade ve anlaşılır tutmak
+
+
+---
+
+## 📌 Contribution
+
+Contributions are welcome.  
+Please follow these steps:
+
+1. Create a new branch  
+2. Add or update Markdown files  
+3. Open a Pull Request  
+4. Use clear commit messages and follow repository structure  
+
+---
+
+## 📜 License
+
+This project is open-source and available under the MIT License.

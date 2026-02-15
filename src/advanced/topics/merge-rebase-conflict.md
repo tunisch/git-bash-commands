@@ -1,6 +1,6 @@
 # Merge vs Rebase Differences & Handling Conflicts  (EN & TR)
 
-## 🇬🇧  Merge vs Rebase Differences & Conflict Resolution
+## 🇬🇧 | Merge vs Rebase Differences & Conflict Resolution
 When working on two different branches, there are two main ways to combine them:  **merge** and **rebase**.  
 
 Both achieve the same goal—bringing changes together—but they work very differently.
@@ -232,10 +232,12 @@ git rebase --continue
 
 
 
-🇹🇷 Bölüm 3: Merge ve Rebase Farkları. Conflict ile Başa Çıkmak
-İki farklı branch üzerinde çalışırken, bu branch’leri birleştirmek için iki yöntem vardır:
-merge ve rebase.
+# 🇹🇷 |  Merge ve Rebase Farkları. Conflict ile Başa Çıkmak
+
+İki farklı branch üzerinde çalışırken, bu branch’leri birleştirmek için iki yöntem vardır: **merge** ve **rebase.**
+
 Her ikisi de değişiklikleri bir araya getirir, ancak çalışma şekilleri tamamen farklıdır.
+
 Bu bölümde ayrıca conflict çözümü konusunu da ele alıyoruz.
 
 ## 1. Merge Nedir?
